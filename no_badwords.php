@@ -15,6 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>PHP Badwords</title>
   </head>
 
@@ -26,12 +27,19 @@
     <main>
         <?php
           $textLength = strlen($userText);
-          echo "<pre> \nTesto originale: '$userText'. \nLunghezza del testo: $textLength. \n</pre>";
+          echo "
+            <p> <b>Testo originale</b>: ' $userText '. 
+            <br/>
+            Lunghezza del testo originale: $textLength. </p>";
+            
           $userTextCensored = str_ireplace($badword,'***',$userText);
           $textLengthCensored = strlen($userTextCensored);
-          echo "<pre> \nTesto censurato: '$userTextCensored'. \nLunghezza del testo: $textLengthCensored. \n</pre>";
+          
+          echo "
+            <p> <b>Testo censurato</b>: ' $userTextCensored '. 
+            <br/>
+            Lunghezza del testo censurato: $textLengthCensored. </p>";
         ?>
-
     </main>
   </body>
 
