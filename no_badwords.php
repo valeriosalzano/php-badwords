@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 
 <?php
-  $badword = $_GET['badword'];
+  $badword = trim($_GET['badword']);
   $userText = $_GET['userText'];
 ?>
 
