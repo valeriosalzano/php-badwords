@@ -1,10 +1,5 @@
-<!-- 
-  Creare un form PHP che permetta di inviare due campi: un paragrafo ed una parola da censurare.
-  Gestire il tutto con due file diversi.
-  Il primo file dovrà permettere all’utente di inserire i dati e inviare la richiesta al server. 
--->
-
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
